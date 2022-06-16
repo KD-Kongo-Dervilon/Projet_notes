@@ -1,0 +1,25 @@
+.note {
+    padding: 1.5625rem;
+    height: 15.625rem;
+    width: 16.25rem;
+    display: flex;
+    flex-direction: column;
+    background: blueviolet;
+    border-radius: 1.875rem;
+    box-shadow: 2px 2px 5px #000;
+    white-space: pre-wrap;
+	overflow-x: hidden;
+}
+
+.note_text {
+    flex: 1;
+    outline: none;
+    border: none;
+    resize: none;
+    background: transparent;
+    line-height: 1.875rem;
+}
+
+small {
+    font-size: 1rem;
+}

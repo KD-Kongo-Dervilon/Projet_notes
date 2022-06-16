@@ -17,34 +17,28 @@ code {
 		'Courier New', monospace;
 }
 
-.container {
+.App {
 	max-width:  960px;
 	margin: 0rem auto;
 	padding: 0rem 0.9375rem;
+	scroll-behavior: smooth;
 }
+
+.custom-scroll::-webkit-scrollbar {
+	width: 8px;
+}
+
 
 .header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-
 }
 
 .header img {
 	width: 60px;
 	margin: 2rem 0rem;
 }
-
-textarea {
-	border: none;
-	resize: none;
-}
-
-textarea:focus{
-	outline: none;
-}
-
-
 
 .save{
 	background-color: #e1e1e1;
@@ -59,36 +53,6 @@ textarea:focus{
 	cursor: pointer;
 }
 
-.note {
-	border-radius: 10px;
-	padding: 2rem;
-	min-height: 170px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	white-space: pre-wrap;
-	overflow-x: hidden;
-	box-shadow: 2px 2px 5px #000;
-}
-
-.note.new,textarea {
-	background-color: #67d7cc;
-}
-
-.note-footer {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.delete-icon {
-	cursor: pointer;
-}
-
-.delete-icon:hover {
-	color: crimson;
-}
-
 .search {
 	display: flex;
 	align-items: center;
@@ -96,8 +60,11 @@ textarea:focus{
 	border-radius: 10px;
 	padding: 10px;
 	margin-bottom: 1.5rem;
-	box-shadow: 2px 2px 5px;
+	box-shadow: 1px 1px 5px;
+	max-width:  960px;
+	margin: 0rem auto;
 }
+
 
 .search-icons {
 	margin-right: 10px;

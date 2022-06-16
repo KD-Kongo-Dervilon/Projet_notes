@@ -1,13 +1,13 @@
 import React from 'react'
-import Note from './components/Note';
+import NoteContainer from './components/NoteContainer/NoteContainer';
 
 import Home from './pages/Home ';
 
 const App = () => {
   return (
-    <div>
+    <div className='App'>
       <Home/>
-      <Note/>
+      <NoteContainer/>
     </div>
   )
 }
