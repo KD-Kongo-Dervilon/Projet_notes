@@ -1,0 +1,35 @@
+.sidebar {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar img {
+    cursor: pointer;
+    width: 60px;
+    margin-right: 1rem;
+    box-shadow:  2px 2px 5px #000;
+    border-radius:50%;
+    background: violet;
+}
+
+.sidebar_list {
+    display: flex;
+    justify-content: flex-start;
+    width: 0px;
+    gap: 20px;
+    transition:  300ms linear;
+    cursor: pointer;
+}
+
+.sidebar_list_active {
+    width: 300px
+}
+
+.sidebar_list_item {
+    border-radius: 50%;
+    height:26px;
+    width: 26px;
+    list-style: none;
+    box-shadow:  2px 2px 5px #000;
+}

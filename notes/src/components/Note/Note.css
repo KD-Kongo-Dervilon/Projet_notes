@@ -4,7 +4,7 @@
     width: 16.25rem;
     display: flex;
     flex-direction: column;
-    background: blueviolet;
+    justify-content: space-between;
     border-radius: 1.875rem;
     box-shadow: 2px 2px 5px #000;
     white-space: pre-wrap;
@@ -23,3 +23,18 @@
 small {
     font-size: 1rem;
 }
+
+.note img {
+    width: 30px;;
+}
+
+.note_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note_footer img{
+    cursor: pointer;
+}
+
