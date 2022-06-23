@@ -4,11 +4,13 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Home from './pages/Home ';
 
 
-
 function App() {
   const [notes, setNotes] = useState(
     JSON.parse(localStorage.getItem("notes-app")) || []
   );
+
+  const [searchText, setSearchText] = useState('');
+  const [darkmode, setDarkMode] = useState(false);
 
   const addNote = (color) => {
     const tempNotes = [...notes];
@@ -29,7 +31,7 @@ function App() {
     if (index < 0) return;
 
     tempNotes.splice(index, 1);
-    setNotes(tempNotes);
+      setNotes(tempNotes);
   };
 
   const updateText = (text, id) => {
@@ -47,15 +49,22 @@ function App() {
   }, [notes]);
 
 
+
   return (
-    <div className="App">
-      <Home />
-      <Sidebar addNote={addNote} />
-      <NoteContainer
-        notes={notes}
-        deleteNote={deleteNote}
-        updateText={updateText}
-      />
+    <div className={`${darkmode && 'dark-mode'}`}>
+      <div className="App">
+        <Home handleToggleDarkMode={setDarkMode} 
+                    handleSearchNote={setSearchText}
+        />
+        <Sidebar addNote={addNote} />
+        <NoteContainer
+          notes={notes.filter((note) => 
+              note.text.toLowerCase().includes(searchText)
+          )}
+          deleteNote={deleteNote}
+          updateText={updateText}
+        />
+      </div>
     </div>
   );
 }

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Logo from "../assets/img/logo.svg";
 
-const Header = () => {
+const Header = ({ handleToggleDarkMode }) => {
 
     return (
         <div className='header'>
@@ -9,6 +9,7 @@ const Header = () => {
             <h2> Notes </h2>
             <button
                 className='save'
+                onClick={() => handleToggleDarkMode((previousDarkMode) => !previousDarkMode)}
                 >
                 Mode Sombre
             </button>
