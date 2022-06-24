@@ -9,7 +9,7 @@ root.render(
   <BrowserRouter>
     <React.StrictMode>
     <Routes>
-      <Route exact path="" element={<App/>} />
+      <Route exact path="/Projet_notes" element={<App/>} />
     </Routes>
     </React.StrictMode>
   </BrowserRouter>
