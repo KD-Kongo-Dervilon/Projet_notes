@@ -1,3 +1,19 @@
+[![forthebadge](./uses-react.svg)](https://fr.reactjs.org/)
+[![forthebadge](./uses-react-router-v6.svg)](https://reactrouter.com/)
+[![forthebadge](./made-with-create-react-app.svg)](https://create-react-app.dev/)
+
+## Project's presentation
+
+A notes app, with colors to specify note urgency
+
+* Launch the application with :
+
+To launch the application, you can clone it with the HTTPS link
+
+https://github.com/KD-Kongo-Dervilon/Projet_notes.git
+
+or download it
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
