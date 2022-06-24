@@ -4,7 +4,7 @@ import PlusIcon from "../../assets/img/plus-circle-solid-24.png"
 
 
 const Sidebar = (props) => {
-    const colors = [ "#fff","#fe9772", "#fec971", "#00d4fe", "#b693fd", "#e4ee91"]
+    const colors = [ "#fff","#fe9772", "#fec971", "#00d4fe", "#b693fd", "#e4ee91", "#ACC8E5"]
     const [listOpen, setlistOpen] = useState(false);
 
     return (
