@@ -1,7 +1,3 @@
-[![forthebadge](./uses-react.svg)](https://fr.reactjs.org/)
-[![forthebadge](./uses-react-router-v6.svg)](https://reactrouter.com/)
-[![forthebadge](./made-with-create-react-app.svg)](https://create-react-app.dev/)
-
 ## Project's presentation
 
 A notes app, with colors to specify note urgency
